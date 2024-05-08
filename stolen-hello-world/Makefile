@@ -1,6 +1,6 @@
 CFILES = $(wildcard *.c)
 OFILES = $(CFILES:.c=.o)
-GCCFLAGS = -Wall -ffreestanding -nostdinc -nostdlib -nostartfiles -mstrict-align
+GCCFLAGS = -Wall -ffreestanding -nostdinc -nostdlib -nostartfiles -mstrict-align -g
 CROSS_COMPILE = aarch64-linux-gnu-
 
 all: clean kernel8.img
